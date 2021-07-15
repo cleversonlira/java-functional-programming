@@ -48,6 +48,8 @@ public class _Stream {
 		.map(personStringFunction)
 		.mapToInt(length)
 		.forEach(println);
+		
+		System.out.println(people.stream().anyMatch(person -> person.gender.equals(FEMALE)));
 
 	}
 
