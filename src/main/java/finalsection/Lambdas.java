@@ -6,7 +6,9 @@ import java.util.function.Function;
 public class Lambdas {
 
 	public static void main(String[] args) {
-
+		
+		
+		//Cannot use with primitives types
 		Function<String, String> upperCase = name -> name.toUpperCase();
 		
 		BiFunction<String, Integer, String> upperCaseAndPrintAge = (name, age) -> {
